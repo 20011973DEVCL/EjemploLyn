@@ -1,0 +1,14 @@
+<div class="list">
+  <div class="list-row dark">
+    @for (key of keys; track key) {
+    <div class="list-field">{{ key }}</div>
+    }
+  </div>
+  @for (item of data; track item) {
+  <div class="list-row">
+    @for (key of keys; track key) {
+    <div class="list-field">{{ item[key] }}</div>
+    }
+  </div>
+  }
+</div>

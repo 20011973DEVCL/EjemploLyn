@@ -1,0 +1,40 @@
+<form [formGroup]="loginForm">
+  <div class="container spacer-v">
+    <label for="email"><b>Email</b></label>
+    <input
+      type="text"
+      placeholder="user@gmail.com"
+      name="email"
+      formControlName="email"
+      required
+    />
+    @if (isSubmitted && loginForm.get('email')?.invalid &&
+    loginForm.get('email')!.hasError('email')) {
+    <small class="red">Debe ser un email</small>
+    } @if (isSubmitted && loginForm.get('email')?.invalid &&
+    loginForm.get('email')!.hasError('required')) {
+    <small class="red">Required</small>
+    }
+
+    <label for="password"><b>Password</b></label>
+    <input
+      type="password"
+      placeholder="123456"
+      name="password"
+      formControlName="password"
+      minlength="6"
+      required
+    />
+    @if (isSubmitted && loginForm.get('password')?.invalid &&
+    loginForm.get('password')!.hasError('minlength')) {
+    <small class="red">Longitud mínima 6</small>
+    } @if (isSubmitted && loginForm.get('password')?.invalid &&
+    loginForm.get('password')!.hasError('required')) {
+    <small class="red">Required</small>
+    }
+
+    <button class="btn btn-outline my-2" type="button" (click)="onLogin()">
+      Login
+    </button>
+  </div>
+</form>

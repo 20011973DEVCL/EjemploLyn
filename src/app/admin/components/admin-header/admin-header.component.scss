@@ -1,0 +1,30 @@
+.admin-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: aquamarine;
+  max-height: 40px;
+}
+
+.admin-header-title {
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+.admin-header-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 1;
+  max-height: 40px;
+  min-height: 40px;
+  padding: 1rem;
+}
+
+.spacer {
+  display: flex;
+  flex-grow: 1;
+}

@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.full-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.2rem 0.7rem;
+  height: 32px;
+}
+
+.btn-outline {
+  background-color: white;
+  color: seagreen;
+  border-radius: 1rem;
+  border-color: seagreen;
+}
+
+.red {
+  color: red;
+}
